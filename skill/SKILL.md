@@ -1,11 +1,13 @@
 ---
 name: lawyer-video
-description: Turn a lawyer's talking-head recording and script or timed subtitles into a finished, captioned legal explainer with scene-specific character animation and graphics. Also use to revise or test the characters and actions in such a video.
+description: 根据律师口播视频、口播稿或 SRT 制作带逐句字幕、人物行为动画和示意图的法律科普视频；也用于修改、检查或测试此类视频中的人物动作。支持原始口播音频和头像素材。
 ---
 
 # 律师口播视频
 
 把律师的原始口播当作叙事主线，用人物、动作和道具讲清具体事实与证据关系。文字只负责字幕与必要提示，不能让全片变成文字卡片。可编辑工程与可播放成片一起交付。回应语言、存放位置、画幅及发布渠道依照用户和项目约定；没有指定时按素材和渠道选择，并说明关键假设。
+
+**第一次使用时先读 [中文逐步执行指南](references/workflow-zh.md)**。指南解释不同素材如何处理、如何把一段口播变成可制作的分镜、长视频如何完整覆盖，以及每一步应得到什么文件。不要把下面的规则只复述给用户：用户要求制作时，应实际检查素材、编写工程、渲染和验收；工具不可用时说明具体障碍与已完成部分。
 
 ## 素材与口径
 
@@ -23,4 +25,4 @@ description: Turn a lawyer's talking-head recording and script or timed subtitle
 5. 按时间线将动画、真人和字幕组装；如使用 Remotion，可按 [口播视频与 SRT 合成配方](references/remotion-assembly.md) 搭建最小可运行工程，再按分镜实现人物、行为与道具。涉及剪辑或重新定时必须经用户要求或能保持叙事及口播准确。跟随音频，不用文字出现的节奏替代语义节奏。改变已有作品时只改用户指定部分。
 6. 渲染后执行 [成片验收](references/delivery-qa.md)：核查真实渲染文件的画面、字幕、音轨、时长与播放，并检查动作连续性，修复可见错误后复检。明确披露没有完成的检查或无法满足的输入。
 
-交付时链接可播放 MP4，说明时长、分辨率、主要制作方式和实际完成的检查，并提供可编辑工程位置。用户要求先看样片时仅交付样片，不擅自继续改动整片。
+交付时链接可播放 MP4，说明时长、分辨率、主要制作方式和实际完成的检查，并提供可编辑工程位置。人物模板只是素材与动作起点，不会自动把任意稿件变成成片；Agent 需要为实际口播编排完整时间线。用户要求先看样片时仅交付样片，不擅自继续改动整片。

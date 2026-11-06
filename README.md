@@ -6,13 +6,23 @@
 
 ## 安装和使用
 
-将仓库中的 `skill/` 目录完整复制到 Agent 的技能目录，并命名为 `lawyer-video`。例如 Codex 默认位置为 `~/.codex/skills/lawyer-video/`；其他 Agent 请使用其支持 `SKILL.md` 的技能目录或把该目录作为上下文提供。保留其中的 `references/` 和 `assets/` 目录。
+将仓库中的 `skill/` 目录完整复制到 Agent 的技能目录，并命名为 `lawyer-video`。例如 Codex 默认位置为 `~/.codex/skills/lawyer-video/`；其他 Agent 请使用其支持 `SKILL.md` 的技能目录或把该目录作为上下文提供。保留其中的 `references/`、`scripts/` 和 `assets/` 目录。安装后若 Agent 未识别到新技能，可重启或重新加载技能列表。
+
+例如在 Windows PowerShell 中，可先把仓库下载到 D 盘，再复制技能目录：
+
+```powershell
+git clone https://github.com/XJHwxjb/lawyer-video-skill.git D:\Codex\lawyer-video-skill
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills" | Out-Null
+Copy-Item -Recurse -LiteralPath 'D:\Codex\lawyer-video-skill\skill' -Destination "$env:USERPROFILE\.codex\skills\lawyer-video"
+```
+
+上述示例假设目标技能目录尚不存在；若已存在同名技能，先检查并妥善备份，避免覆盖自己的改动。其他操作系统请将 `skill/` 复制到对应 Agent 的技能目录。
 
 然后向 Agent 提供口播视频、口播稿或 SRT，以及画幅、发布平台等要求，例如：
 
 > 使用 lawyer-video 技能，根据我提供的口播视频和 SRT 制作法律科普视频。保留律师真人和原声，用人物行为动画说明内容，先做一段 10 秒的人物动作小样给我看。
 
-人物样片运行方法与依赖见 [模板说明](skill/assets/character-study/README.md)。完整视频的工具、算力、输入素材和审片方式由执行环境及用户需求决定。
+Agent 先读 [SKILL.md](skill/SKILL.md)，再按任务读取[中文逐步执行指南](skill/references/workflow-zh.md)、[人物动作指南](skill/references/character-animation.md)和[口播视频与字幕合成配方](skill/references/remotion-assembly.md)。人物样片运行方法与依赖见[模板说明](skill/assets/character-study/README.md)。完整视频的工具、算力、输入素材和审片方式由执行环境及用户需求决定。
 
 ## 内容与隐私
 
