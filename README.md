@@ -2,7 +2,7 @@
 
 一个可供支持 `SKILL.md` 的 AI Agent 使用的技能：根据律师口播视频、稿件或带时间戳的字幕，制作带真人画面、逐句字幕、人物行为动画和说明图示的法律科普视频。
 
-技能包含制作流程、人物动作和成片验收方法，以及一个可编辑的 10 秒人物动作测试模板。模板是 **Remotion 动画起点**，不是一键把任意口播自动变成完整视频的程序；Agent 仍需根据素材分析、分镜、实现、渲染和验收成片。
+技能包含制作流程、人物动作和成片验收方法，一个可编辑的 10 秒人物动作测试模板，以及 **51 个原创法律主题 SVG 图案**。模板是 **Remotion 动画起点**，不是一键把任意口播自动变成完整视频的程序；Agent 仍需根据素材分析、分镜、实现、渲染和验收成片。
 
 ## 安装和使用
 
@@ -22,7 +22,9 @@ Copy-Item -Recurse -LiteralPath 'D:\Codex\lawyer-video-skill\skill' -Destination
 
 > 使用 lawyer-video 技能，根据我提供的口播视频和 SRT 制作法律科普视频。保留律师真人和原声，用人物行为动画说明内容，先做一段 10 秒的人物动作小样给我看。
 
-Agent 先读 [SKILL.md](skill/SKILL.md)，再按任务读取[中文逐步执行指南](skill/references/workflow-zh.md)、[人物动作指南](skill/references/character-animation.md)和[口播视频与字幕合成配方](skill/references/remotion-assembly.md)。人物样片运行方法与依赖见[模板说明](skill/assets/character-study/README.md)。完整视频的工具、算力、输入素材和审片方式由执行环境及用户需求决定。
+Agent 先读 [SKILL.md](skill/SKILL.md)，再按任务读取[中文逐步执行指南](skill/references/workflow-zh.md)、[人物动作指南](skill/references/character-animation.md)、[法律 SVG 使用与绘制指南](skill/references/legal-svg.md)和[口播视频与字幕合成配方](skill/references/remotion-assembly.md)。人物样片运行方法与依赖见[模板说明](skill/assets/character-study/README.md)。完整视频的工具、算力、输入素材和审片方式由执行环境及用户需求决定。
+
+法律 SVG 图案可从[图标目录](skill/assets/legal-svg/catalog.json)查找，覆盖天平、法槌、合同、家庭、劳动、债务、房产、证据和辅助元素；[分类预览图](skill/assets/legal-svg/previews/)可以直接查看。图案使用透明底和 `currentColor` 描边，颜色和动画需在具体作品中设置。
 
 ## 内容与隐私
 
