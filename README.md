@@ -4,6 +4,8 @@
 
 技能包含制作流程、[叙事与镜头节奏指南](skill/references/narrative-motion.md)、人物动作和成片验收方法，一个可编辑的 10 秒人物动作测试模板，以及 **51 个原创法律主题 SVG 图案**。模板是 **Remotion 动画起点**，不是一键把任意口播自动变成完整视频的程序；Agent 仍需根据素材分析、分镜、实现、渲染和验收成片。关键金额要区分约定、实付、主张与判决，人物和道具需要表现实际行为与交接；字幕和信息按口播语义推进。
 
+新版增加[中文执行清单](skill/references/agent-execution-zh.md)、[分层镜头示例](skill/references/camera-layers-example.md)和[文书衔接示例](skill/assets/document-transition/README.md)。示例需复制到独立项目运行，再按真实口播改造；不能把演示画面当成真实案件事实。
+
 ## 安装和使用
 
 将仓库中的 `skill/` 目录完整复制到 Agent 的技能目录，并命名为 `lawyer-video`。例如 Codex 默认位置为 `~/.codex/skills/lawyer-video/`；其他 Agent 请使用其支持 `SKILL.md` 的技能目录或把该目录作为上下文提供。保留其中的 `references/`、`scripts/` 和 `assets/` 目录。安装后若 Agent 未识别到新技能，可重启或重新加载技能列表。
